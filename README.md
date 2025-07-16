@@ -47,7 +47,7 @@ user-wallet-transactions.json (raw data)
         │     • analysis.md + score_distribution.png
 
 ---
-
+```
 ## ⚙️ Feature List
 
 | Feature               | Description                             |
