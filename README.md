@@ -28,22 +28,23 @@ We use a **rule-based scoring system** with engineered behavioral features from 
 
 ## 🏗️ Architecture
 
+```text
 user-wallet-transactions.json (raw data)
-│
-▼
-scorer.py
-├── Load & Flatten Transaction Data
-├── Aggregate Wallet-Level Behavior
-├── Engineer Features:
-│ • Total Borrowed, Deposited, Repaid
-│ • Repayment Ratios
-│ • Liquidation Count
-│ • Activity Frequency
-│ • Asset Diversity
-├── Normalize & Score Wallets (0–1000)
-├── Export:
-│ • wallet_scores.csv
-│ • analysis.md + score_distribution.png
+        │
+        ▼
+     scorer.py
+        ├── Load & Flatten Transaction Data
+        ├── Aggregate Wallet-Level Behavior
+        ├── Engineer Features:
+        │     • Total Borrowed, Deposited, Repaid
+        │     • Repayment Ratios
+        │     • Liquidation Count
+        │     • Activity Frequency
+        │     • Asset Diversity
+        ├── Normalize & Score Wallets (0–1000)
+        ├── Export:
+        │     • wallet_scores.csv
+        │     • analysis.md + score_distribution.png
 
 ---
 
